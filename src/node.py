@@ -49,7 +49,7 @@ class Node(object):
     def add_forwarding_entry(self,address,link):
         self.forwarding_table[address] = link
 
-    def delete_forwarding_entry(self,address,link):
+    def delete_forwarding_entry(self,address):
         if address not in self.forwarding_table:
             return
         del self.forwarding_table[address]
